@@ -24,12 +24,31 @@
 
 <body>
   <div class="menu">
-    <h3>DidUP Plus</h3>
-    <a>Home</a>
-    <a>Screen 1</a>
-    <a>Screen 2</a>
-    <a>Screen 3</a>
-    <a>Screen 4</a>
+    <div style="display: flex; align-items: center; justify-content: flex-start; margin-top: 15px; margin-bottom: 15px;">
+      <section>
+        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+      </section>
+      <h3>DidUP Plus</h3>
+    </div>
+    <div class="voice" onclick="this.classList.toggle('selected')">
+      <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274C22 8.77128 22 9.91549 22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039Z"  stroke-width="2"/>
+        <path d="M15 18H9"  stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <p>Home</p>
+    </div>
+    <div class="voice">
+      <p>Screen 1</p>
+    </div>
+    <div class="voice">
+      <p>Screen 2</p>
+    </div>
+    <div class="voice">
+      <p>Screen 3</p>
+    </div>
+    <div class="voice">
+      <p>Screen 4</p>
+    </div>
   </div>
   <div class="contentwrapper">
     <div class="screen1" id="button1">
@@ -59,19 +78,81 @@
           </div>
         </div>
       </div>
-      <div class="compiti">
-        <div class="compito">
-          <div class="materia">
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z" fill="#000000"/>
-            </svg>
-            <h4>Informatica</h4>
-          </div>
-          <p>Pagina 208 n° 3 testtesttesttesttesttesttesttesttesttesttesttesttesttest</p>
-          <progress max="100" value="70"></progress>
-          <p style="margin-bottom: 5px; font-size: 1em; color: rgb(255 255 255 / 0.6)">Due tomorrow</p>
+      <div class="status">
+        <div class="lastupdate">
+          <div></div>
+          <p>Profile: Federico - Last update: DD/MM hh:mm</p>
         </div>
+        <div class="update">
+          <svg id="Refresh Icon" data-name="Refresh Icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 118.04 122.88"><path d="M16.08,59.26A8,8,0,0,1,0,59.26a59,59,0,0,1,97.13-45V8a8,8,0,1,1,16.08,0V33.35a8,8,0,0,1-8,8L80.82,43.62a8,8,0,1,1-1.44-15.95l8-.73A43,43,0,0,0,16.08,59.26Zm22.77,19.6a8,8,0,0,1,1.44,16l-10.08.91A42.95,42.95,0,0,0,102,63.86a8,8,0,0,1,16.08,0A59,59,0,0,1,22.3,110v4.18a8,8,0,0,1-16.08,0V89.14h0a8,8,0,0,1,7.29-8l25.31-2.3Z"/></svg>
+          <p>Refresh</p>
+        </div>
+      </div>
+      <div class="compiticont">
+        <div style="display:flex; align-items: center; justify-content: flex-start; margin-bottom: 5px">
+          <h3>Soon due  </h3>
+          <div class="number">
+            7
+          </div>
+        </div>
+        <div class="compiti">
+          <div class="compito">
+            <div class="materia">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z"  />
+              </svg>
+              <h4>Informatica</h4>
+            </div>
+            <p>Pagina 208 n° 3 testtesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+            <progress max="100" value="70"></progress>
+            <p style="margin-bottom: 5px; font-size: 0.9em;  color: #125c98;">Due tomorrow</p>
+          </div>
+          <div class="compito">
+            <div class="materia">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z"  />
+              </svg>
+              <h4>Informatica</h4>
+            </div>
+            <p>Pagina 208 n° 3 testtesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+            <progress max="100" value="70"></progress>
+            <p style="margin-bottom: 5px; font-size: 0.9em;  color: #125c98;">Due tomorrow</p>
+          </div>
+          <div class="compito">
+            <div class="materia">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z"  />
+              </svg>
+              <h4>Informatica</h4>
+            </div>
+            <p>Pagina 208 n° 3 testtesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+            <progress max="100" value="70"></progress>
+            <p style="margin: 5px 0 5px 0; font-size: 0.9em; color: #125c98;">Due tomorrow</p>
+          </div>
+          <div class="compito">
+            <div class="materia">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z"  />
+              </svg>
+              <h4>Informatica</h4>
+            </div>
+            <p>Pagina 208 n° 3 testtesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+            <progress max="100" value="70"></progress>
+            <p style="margin-bottom: 5px; font-size: 0.9em;  color: #125c98;">Due tomorrow</p>
+          </div>
+          <div class="compito">
+            <div class="materia">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 6C2 4.34315 3.34315 3 5 3H19C20.6569 3 22 4.34315 22 6V15C22 16.6569 20.6569 18 19 18H13V19H15C15.5523 19 16 19.4477 16 20C16 20.5523 15.5523 21 15 21H9C8.44772 21 8 20.5523 8 20C8 19.4477 8.44772 19 9 19H11V18H5C3.34315 18 2 16.6569 2 15V6ZM5 5C4.44772 5 4 5.44772 4 6V15C4 15.5523 4.44772 16 5 16H19C19.5523 16 20 15.5523 20 15V6C20 5.44772 19.5523 5 19 5H5Z"  />
+              </svg>
+              <h4>Informatica</h4>
+            </div>
+            <p>Pagina 208 n° 3 testtesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+            <progress max="100" value="70"></progress>
+            <p style="margin-bottom: 5px; font-size: 0.9em;  color: #125c98;">Due tomorrow</p>
+          </div>
 
+        </div>
       </div>
     </div>
     <div class="screen2">
