@@ -31,27 +31,27 @@
         </section>
         <h3>DidUP Plus</h3>
       </div>
-      <div class="quickactions">
+      <div class="quickactions" id="quickactions">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 12H20M12 4V20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <p>Quick actions</p>
       </div>
-      <div class="voice" onclick="this.classList.toggle('selected')">
+      <div class="voice selected"  id="home">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2 12.2039C2 9.91549 2 8.77128 2.5192 7.82274C3.0384 6.87421 3.98695 6.28551 5.88403 5.10813L7.88403 3.86687C9.88939 2.62229 10.8921 2 12 2C13.1079 2 14.1106 2.62229 16.116 3.86687L18.116 5.10812C20.0131 6.28551 20.9616 6.87421 21.4808 7.82274C22 8.77128 22 9.91549 22 12.2039V13.725C22 17.6258 22 19.5763 20.8284 20.7881C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.7881C2 19.5763 2 17.6258 2 13.725V12.2039Z"  stroke-width="2"/>
           <path d="M15 18H9"  stroke-width="1.5" stroke-linecap="round"/>
         </svg>
         <p>Home</p>
       </div>
-      <div class="voice" onclick="this.classList.toggle('selected')">
+      <div class="voice"  id="homework">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="12" cy="12" r="10" stroke-width="1.5"/>
           <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <p>Homework</p>
       </div>
-      <div class="voice" onclick="this.classList.toggle('selected')">
+      <div class="voice"  id="whattoprepare">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 8C4 5.17157 4 3.75736 4.87868 2.87868C5.75736 2 7.17157 2 10 2H14C16.8284 2 18.2426 2 19.1213 2.87868C20 3.75736 20 5.17157 20 8V16C20 18.8284 20 20.2426 19.1213 21.1213C18.2426 22 16.8284 22 14 22H10C7.17157 22 5.75736 22 4.87868 21.1213C4 20.2426 4 18.8284 4 16V8Z" stroke-width="1.5"/>
           <path d="M19.8978 16H7.89778C6.96781 16 6.50282 16 6.12132 16.1022C5.08604 16.3796 4.2774 17.1883 4 18.2235" stroke-width="1.5"/>
@@ -61,7 +61,7 @@
         </svg>
         <p>What to prepare</p>
       </div>
-      <div class="voice" onclick="this.classList.toggle('selected')">
+      <div class="voice"  id="agenda">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M2 12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C19.6569 22 17.7712 22 14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12Z"  stroke-width="1.5"/>
           <path d="M7 4V2.5" stroke-width="1.5" stroke-linecap="round"/>
@@ -76,7 +76,7 @@
         </svg>
         <p>Agenda</p>
       </div>
-      <div class="voice" onclick="this.classList.toggle('selected')">
+      <div class="voice"  id="documents">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M3 10C3 6.22876 3 4.34315 4.17157 3.17157C5.34315 2 7.22876 2 11 2H13C16.7712 2 18.6569 2 19.8284 3.17157C21 4.34315 21 6.22876 21 10V14C21 17.7712 21 19.6569 19.8284 20.8284C18.6569 22 16.7712 22 13 22H11C7.22876 22 5.34315 22 4.17157 20.8284C3 19.6569 3 17.7712 3 14V10Z" stroke-width="1.5"/>
           <path d="M8 10H16" stroke-width="1.5" stroke-linecap="round"/>
@@ -84,7 +84,7 @@
         </svg>
         <p>Documents</p>
       </div>
-      <div class="voice" onclick="this.classList.toggle('selected')">
+      <div class="voice"  id="grades">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4.25977 11.0199V15.9899C4.25977 17.8099 4.25977 17.8099 5.97977 18.9699L10.7098 21.6999C11.4198 22.1099 12.5798 22.1099 13.2898 21.6999L18.0198 18.9699C19.7398 17.8099 19.7398 17.8099 19.7398 15.9899V11.0199C19.7398 9.19994 19.7398 9.19994 18.0198 8.03994L13.2898 5.30994C12.5798 4.89994 11.4198 4.89994 10.7098 5.30994L5.97977 8.03994C4.25977 9.19994 4.25977 9.19994 4.25977 11.0199Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M17.5 7.63V5C17.5 3 16.5 2 14.5 2H9.5C7.5 2 6.5 3 6.5 5V7.56" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -92,7 +92,7 @@
         </svg>
         <p>Grades</p>
       </div>
-      <div class="voice" onclick="this.classList.toggle('selected')">
+      <div class="voice"  id="teachers">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path  d="M17.9981 7.16C17.9381 7.15 17.8681 7.15 17.8081 7.16C16.4281 7.11 15.3281 5.98 15.3281 4.58C15.3281 3.15 16.4781 2 17.9081 2C19.3381 2 20.4881 3.16 20.4881 4.58C20.4781 5.98 19.3781 7.11 17.9981 7.16Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path  d="M16.9675 14.4402C18.3375 14.6702 19.8475 14.4302 20.9075 13.7202C22.3175 12.7802 22.3175 11.2402 20.9075 10.3002C19.8375 9.59016 18.3075 9.35016 16.9375 9.59016"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -103,7 +103,7 @@
         </svg>
         <p>Teachers</p>
       </div>
-      <div class="voice" onclick="this.classList.toggle('selected')">
+      <div class="voice"  id="setting">
         <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 6H8M8 6V4M8 6V8M20 6H12M4 12H14M14 12V10M14 12V14M20 12H18M4 18H10M10 18V16M10 18V20M20 18H14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
@@ -120,7 +120,7 @@
     </div>
   </div>
   <div class="contentwrapper">
-    <div class="screen1" id="button1">
+    <div class="screen1" id="scr1">
       <div class="hello">
         <div class="icon">
           <p>FM</p>
@@ -224,17 +224,26 @@
         </div>
       </div>
     </div>
-    <div class="screen2">
+    <div class="screen2" id="scr2">
       <h1>Screen 2</h1>
     </div>
-    <div class="screen3">
+    <div class="screen3" id="scr3">
       <h1>Screen 3</h1>
     </div>
-    <div class="screen4">
+    <div class="screen4" id="scr4">
       <h1>Screen 4</h1>
     </div>
-    <div class="screen5">
+    <div class="screen5" id="scr5">
       <h1>Screen 5</h1>
+    </div>
+    <div class="screen6" id="scr6">
+      <h1>Screen 6</h1>
+    </div>
+    <div class="screen7" id="scr7">
+      <h1>Screen 7</h1>
+    </div>
+    <div class="screen8" id="scr8">
+      <h1>Screen 8</h1>
     </div>
   </div>
   <script src="js/app.js"></script>
