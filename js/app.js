@@ -191,4 +191,10 @@ filter_all.onclick = function () {
   filter_todo.classList.remove("selected");
 }
 
+const checkboxes = document.querySelectorAll(".checkbox");
 
+checkboxes.forEach(function (checkbox) {
+  checkbox.onclick = function () {
+    this.classList.toggle("active");
+  };
+});
