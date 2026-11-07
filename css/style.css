@@ -116,7 +116,6 @@ body{
 }
 .contentwrapper{
   width: 100%;
-  margin-right: 20px;
 }
 .screen2, .screen3, .screen4, .screen5, .screen6, .screen7, .screen8{
   display: none;
@@ -373,7 +372,6 @@ body{
   justify-content: flex-start;
   text-align: left;
   width: max-content;
-
 }
 .filter{
   cursor: pointer;
@@ -406,6 +404,69 @@ body{
     color: white;
   }
   background: #e85a0c;
+}
+.homework span{
+  font-size: 1em;
+}
+.num{
+  padding: 5px 10px 5px 10px;
+  border-radius: 30px;
+  background: #e85a0c;
+  font-size: 0.5em;
+}
+.workicon{
+  padding: 10px;
+  border-radius: 15px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.work {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #ffffff;
+  margin: 10px;
+  border-radius: 20px;
+  stroke: #999999;
+  box-sizing: border-box;
+}
+.work h4{
+  font-size: 1em;
+  color: #999999;
+  margin-top: 11px;
+  margin-bottom: 0;
+}
+.work h3{
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+.work p{
+  margin-left: 5px;
+  color: #999999;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  min-width: 40px;
+  margin-left: 15px;
+  margin-right: 10px;
+  height: 40px;
+  stroke: white;
+  border: 1px solid #999999;
+  align-self: center;
+  flex: 0 0 40px;
+}
+.checkbox.active{
+  background: #61ca61;
+  border: none
 }
 /*
  * Remove text-shadow in selection highlight:
@@ -481,7 +542,6 @@ textarea {
 /*
  * Hide visually and from screen readers
  */
-
 .hidden,
 [hidden] {
   display: none !important;
