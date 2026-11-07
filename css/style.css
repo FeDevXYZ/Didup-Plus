@@ -420,8 +420,8 @@ body{
 .workicon{
   padding: 10px;
   border-radius: 15px;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -432,6 +432,7 @@ body{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between;
   background: #ffffff;
   margin: 10px;
   width: 90%;

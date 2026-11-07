@@ -207,6 +207,9 @@ function coloriMateria(nome) {
     hash = (hash * 31 + carattere.codePointAt(0)) >>> 0;
   }
 
+  hash = Math.imul(hash ^ (hash >>> 16), 0x85ebca6b);
+  hash = Math.imul(hash ^ (hash >>> 13), 0xc2b2ae35);
+  hash = (hash ^ (hash >>> 16)) >>> 0;
   const tonalita = hash % 360;
 
   return {
@@ -224,5 +227,15 @@ document.querySelectorAll(".work").forEach(function (work) {
   if (!workicon) return;
 
   workicon.style.backgroundColor = colori.sfondo;
-  workicon.querySelector("svg")?.style.setProperty("stroke", colori.testo);
+  const icona = workicon.querySelector("svg");
+  if (!icona) return;
+
+  const modalita = icona.dataset.colorMode ||
+    (icona.hasAttribute("stroke") || icona.querySelector("[stroke]") ? "stroke" : "fill");
+  icona.style.setProperty(modalita, colori.testo);
+  if (modalita === "fill") icona.style.setProperty("stroke", "none");
+  icona.querySelectorAll("*").forEach(function (elemento) {
+    elemento.style.setProperty(modalita, colori.testo);
+    if (modalita === "fill") elemento.style.setProperty("stroke", "none");
+  });
 });
