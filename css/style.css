@@ -357,10 +357,12 @@ body{
   text-align: left;
 }
 .screen2 h3{
+  margin-left: 10px;
   font-size: 2em;
   margin-bottom: 0;
 }
 .screen2 h4{
+  margin-left: 10px;
   font-family: 'Arial', sans-serif;
   font-size: 1.2em;
   margin-top: 5px
@@ -372,6 +374,7 @@ body{
   justify-content: flex-start;
   text-align: left;
   width: max-content;
+  margin-left: 10px;
 }
 .filter{
   cursor: pointer;

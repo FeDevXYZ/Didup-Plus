@@ -198,3 +198,31 @@ checkboxes.forEach(function (checkbox) {
     this.classList.toggle("active");
   };
 });
+
+
+function coloriMateria(nome) {
+  let hash = 0;
+
+  for (const carattere of nome.toLowerCase()) {
+    hash = (hash * 31 + carattere.codePointAt(0)) >>> 0;
+  }
+
+  const tonalita = hash % 360;
+
+  return {
+    testo: `hsl(${tonalita} 65% 32%)`,
+    sfondo: `hsl(${tonalita} 65% 92%)`
+  };
+}
+
+document.querySelectorAll(".work").forEach(function (work) {
+  const materia = work.querySelector("h4")?.textContent.trim();
+  if (!materia) return;
+
+  const colori = coloriMateria(materia);
+  const workicon = work.querySelector(".workicon");
+  if (!workicon) return;
+
+  workicon.style.backgroundColor = colori.sfondo;
+  workicon.querySelector("svg")?.style.setProperty("stroke", colori.testo);
+});
