@@ -161,4 +161,34 @@ settings.onclick = function () {
   settings.classList.add("selected");
 }
 
+const filter_todo = document.getElementById("filter-todo")
+const filter_late = document.getElementById("filter-late")
+const filter_done = document.getElementById("filter-done")
+const filter_all = document.getElementById("filter-all")
+
+filter_todo.onclick = function () {
+  filter_todo.classList.add("selected");
+  filter_late.classList.remove("selected");
+  filter_done.classList.remove("selected");
+  filter_all.classList.remove("selected");
+}
+filter_late.onclick = function () {
+  filter_late.classList.add("selected");
+  filter_done.classList.remove("selected");
+  filter_all.classList.remove("selected");
+  filter_todo.classList.remove("selected");
+}
+filter_done.onclick = function () {
+  filter_done.classList.add("selected");
+  filter_late.classList.remove("selected");
+  filter_all.classList.remove("selected");
+  filter_todo.classList.remove("selected");
+}
+filter_all.onclick = function () {
+  filter_all.classList.add("selected");
+  filter_late.classList.remove("selected");
+  filter_done.classList.remove("selected");
+  filter_todo.classList.remove("selected");
+}
+
 
