@@ -431,9 +431,11 @@ body{
   align-items: flex-start;
   background: #ffffff;
   margin: 10px;
+  width: 90%;
   border-radius: 20px;
   stroke: #999999;
   box-sizing: border-box;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.05);
 }
 .work h4{
   font-size: 1em;
