@@ -9,6 +9,7 @@ const scr8 = document.getElementById("scr8")
 
 const home = document.getElementById("home")
 const homework = document.getElementById("homework")
+const homeworkcallout = document.getElementById("homework-callout")
 const whattoprepare = document.getElementById("whattoprepare")
 const agenda = document.getElementById("agenda")
 const documents = document.getElementById("documents")
@@ -189,6 +190,25 @@ filter_all.onclick = function () {
   filter_late.classList.remove("selected");
   filter_done.classList.remove("selected");
   filter_todo.classList.remove("selected");
+}
+
+homeworkcallout.onclick = function () {
+  scr1.style.display = "none";
+  scr2.style.display = "block";
+  scr3.style.display = "none";
+  scr4.style.display = "none";
+  scr5.style.display = "none";
+  scr6.style.display = "none";
+  scr7.style.display = "none";
+  scr8.style.display = "none";
+  home.classList.remove("selected");
+  homework.classList.add("selected");
+  whattoprepare.classList.remove("selected");
+  agenda.classList.remove("selected");
+  documents.classList.remove("selected");
+  grades.classList.remove("selected");
+  teachers.classList.remove("selected");
+  settings.classList.remove("selected");
 }
 
 const checkboxes = document.querySelectorAll(".checkbox");
