@@ -474,6 +474,29 @@ body{
   background: #61ca61;
   border: none
 }
+
+
+.screen3{
+  background: #f8f7f2;
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  text-align: left;
+}
+.screen3 h3{
+  margin-left: 10px;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+.screen3 h4{
+  margin-left: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  margin-top: 5px
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
