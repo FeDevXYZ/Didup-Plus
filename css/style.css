@@ -494,7 +494,10 @@ body{
   font-size: 1.2em;
   margin-top: 5px
 }
-
+.hr {
+  margin: 0 0 6px 0;
+  opacity: 0.6;
+}
 .timetable{
   border-radius: 20px;
   padding: 10px;
@@ -506,6 +509,7 @@ body{
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 8px
 }
 .timetable span{
   padding: 5px 8px 5px 8px;
@@ -515,8 +519,6 @@ body{
 }
 .subject-name{
   display: flex;
-  stroke: #238f12;
-  color: #238f12;
   align-items: center;
   justify-content: center;
   padding: 8px;
