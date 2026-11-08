@@ -30,9 +30,10 @@ body{
   position: relative;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin: 0;
+  max-width: 1920px
 }
 .menu{
   position: sticky;
@@ -117,7 +118,8 @@ body{
 .contentwrapper{
   width: 100%;
 }
-.screen2, .screen3, .screen4, .screen5, .screen6, .screen7, .screen8{
+/* changed for developing reasons */
+.screen2, .screen1, .screen4, .screen5, .screen6, .screen7, .screen8{
   display: none;
 }
 .screen1{
@@ -242,11 +244,6 @@ body{
   aspect-ratio: 1/1;
   height: 83%;
   border-radius: 50%;
-
-  background: conic-gradient(
-    rgb(255 255 255) 0% 75%,
-    rgb(200 200 200 / 0.5) 75% 100%
-  );
 
   display: flex;
   align-items: center;
@@ -486,18 +483,55 @@ body{
   box-sizing: border-box;
   text-align: left;
 }
-.screen3 h3{
+.screen3 h1{
   margin-left: 10px;
-  font-size: 2em;
+  font-size: 4em;
   margin-bottom: 0;
 }
-.screen3 h4{
+.screen3 h2{
   margin-left: 10px;
   font-family: 'Arial', sans-serif;
   font-size: 1.2em;
   margin-top: 5px
 }
-/*
+
+.timetable{
+  border-radius: 20px;
+  padding: 10px;
+  background: #ffffff;
+  width: 30%;
+}
+.subject{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.timetable span{
+  padding: 5px 8px 5px 8px;
+  background: rgb(232 90 12 / 0.33);
+  color: #923e10;
+  border-radius: 10px;
+}
+.subject-name{
+  display: flex;
+  stroke: #238f12;
+  color: #238f12;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 15px;
+  background: rgb(140 209 140 / 0.29);
+  margin-left: 8px;
+  min-width: 5vw;
+}
+.subject-name p{
+  margin: 0 0 0 5px;
+}
+.subject-name svg{
+  margin: 0;
+}
+ /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
  *
