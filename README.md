@@ -30,7 +30,7 @@ I'm also participating in Hack Club Terra, a YSWS (You Ship We Ship) program by 
 - Agenda, Documents, Grades, Teachers and Settings are still placeholders
 
 ## Demo
-You can try DidUP Plus by clicking [here](https://www.fedevxyz.github.io/didup-plus).
+You can try DidUP Plus by clicking [here](https://fedevxyz.github.io/Didup-Plus/).
 It uses sample and hand-written data to get an overview of the project, to use real data please wait until a later version with a backend is released.
 
 ### Disclaimer
