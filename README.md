@@ -30,5 +30,5 @@ It uses sample and hand-written data to get an overview of the project, to use r
 1. This project is still in development, so it doesn't include any real "app" to it. It's just an HTML page with some CSS and Javascript. You cannot add assignments, sync it with Argo or any of those things.
     Now you probably are wondering: "**What can I do then?**". You can try the interface up until screen 3, and get an idea of the concept DidUP plus follows.
 2. **For Terra Reviewers**: This project is not made by AI, but *it takes the design concept and ideas of a vibecoded project*. Just for clarity, you can visit the [vibecoded project](https://www.github.com/fedevxyz/didup-plus-vibecoded) and try a [demo](fedevxyz.github.io/didup-plus-vibecoded).
-    And if you are still uncertain, i recieved permission to make this project by Olive on slack. You can visit the conversation [here](https://hackclub.slack.com/archives/C0B7KLPA03W/p1793819397760629?thread_ts=1793660295.215039&cid=C0B7KLPA03W) 
+    And if you are still uncertain, i recieved permission to make this project by Olive on slack. You can visit the conversation [here](https://hackclub.slack.com/archives/C0B7KLPA03W/p1793819397760629?thread_ts=1793660295.215039&cid=C0B7KLPA03W) (it's the last three messages)
 
