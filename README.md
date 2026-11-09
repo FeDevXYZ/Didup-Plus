@@ -22,6 +22,13 @@ I'm also participating in Hack Club Terra, a YSWS (You Ship We Ship) program by 
 
 **Server:** Python or Deno
 
+## Features (so far)
+- Sidebar navigation between 8 screens
+- Home: welcome header, "ready for tomorrow" widget, connection status, upcoming homework
+- Homework: filters and homework cards with subject colours generated from the subject name
+- What to prepare: tomorrow's timetable, backpack checklist, homework overview
+- Agenda, Documents, Grades, Teachers and Settings are still placeholders
+
 ## Demo
 You can try DidUP Plus by clicking [here](https://www.fedevxyz.github.io/didup-plus).
 It uses sample and hand-written data to get an overview of the project, to use real data please wait until a later version with a backend is released.
